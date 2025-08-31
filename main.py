@@ -23,11 +23,12 @@ mcp = FastMCP("web-search-tool", stateless_http=True)
 
 
 @mcp.tool()
-def web_search(query: str, max_results: int = 5, provider: str = "serper") -> Dict[str, Any]:
+def web_search(query: str, country: str = None , max_results: int = 5, provider: str = "serper") -> Dict[str, Any]:
     """
     Search the web using Tavily or Serper.
     Args:
         query: query string
+        country: string (Alpha 2 codes e.g : "US" , "HK" etc)
         max_results: results limit
         provider: 'tavily' or 'serper'
     Returns:
@@ -51,7 +52,7 @@ def web_search(query: str, max_results: int = 5, provider: str = "serper") -> Di
             return {"error": "Missing SERPER_API_KEY env var"}
         url = "https://google.serper.dev/search"
         headers = {"X-API-KEY": SERPER_API_KEY, "Content-Type": "application/json"}
-        payload = {"q": query, "num": max_results}
+        payload = {"q": query, "gl": country , "num": max_results}
         res = requests.post(url, headers=headers, json=payload, timeout=20)
         res.raise_for_status()
         return res.json()
