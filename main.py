@@ -23,7 +23,7 @@ mcp = FastMCP("web-search-tool", stateless_http=True)
 
 
 @mcp.tool()
-def web_search(query: str, country: str = None , max_results: int = 5, provider: str = "serper") -> Dict[str, Any]:
+def web_search(query: str, country: str = None , max_results: int = 10, provider: str = "serper") -> Dict[str, Any]:
     """
     Search the web using Tavily or Serper.
     Args:
