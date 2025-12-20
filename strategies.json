@@ -1,0 +1,55 @@
+{
+  "strategies": [
+    {
+      "strategy_type": "sub_industry",
+      "description": "Search within smaller industry segments",
+      "focus_pool": {
+        "Fintech": ["Payments", "Lending", "Insurtech", "Regtech", "WealthTech", "BNPL", "Crypto", "Neobanks", "Personal Finance Apps", "SME Banking", "Trade Finance Platforms", "Investment Platforms", "Crowdfunding Platforms", "Payroll Platforms"],
+        "Healthcare": ["Digital Health", "Telemedicine", "Medical SaaS", "Diagnostics", "Wearables", "Remote Patient Monitoring", "Mental Health Platforms", "Hospital Management Systems", "Clinical Trial Platforms", "Health Insurance Tech", "Laboratory Automation", "Pharma Tech"],
+        "E-commerce": ["Headless Commerce", "Marketplace Platforms", "Subscription SaaS", "DTC Tools", "Retail SaaS", "Dropshipping Platforms", "E-commerce Analytics", "Inventory Management Software", "Order Management Systems", "Point of Sale Software", "Customer Loyalty Platforms"],
+        "Education": ["LMS Platforms", "EdTech SaaS", "Online Tutoring Platforms", "Assessment Platforms", "Student Engagement Tools", "Virtual Classroom Solutions", "Exam Management Systems", "Course Authoring Tools", "Learning Analytics", "Skill Development Platforms", "Coding Bootcamps", "Corporate Training SaaS"],
+        "Logistics": ["Fleet Management", "Supply Chain Software", "Last-Mile Delivery", "Warehouse Management Systems", "Route Optimization", "Inventory Tracking Platforms", "Freight Forwarding SaaS", "Courier Management", "Cold Chain Logistics", "Delivery Automation", "Transportation Management Systems"],
+        "Technology": ["Cloud Platforms", "AI/ML Platforms", "Cybersecurity Solutions", "Data Analytics Tools", "DevOps Platforms", "IoT Solutions", "SaaS Platforms", "Mobile App Development Platforms", "Collaboration Tools", "Blockchain Solutions", "AR/VR Solutions", "Edge Computing"],
+        "Manufacturing": ["Industrial IoT", "Factory Automation", "Predictive Maintenance", "Supply Chain Optimization", "3D Printing Solutions", "ERP Platforms", "Quality Control Software", "Asset Management Systems", "Smart Manufacturing Platforms", "Robotics Software"],
+        "Media": ["Content Management Systems", "Digital Publishing Tools", "Video Streaming Platforms", "Podcast Platforms", "Advertising Tech", "Social Media Management", "Media Analytics Tools", "Content Monetization Platforms", "Influencer Platforms", "Digital Asset Management"],
+        "Real Estate": ["Property Management Software", "Real Estate Analytics", "Tenant Engagement Platforms", "CRM for Real Estate", "Listing Management Platforms", "Commercial Real Estate SaaS", "Leasing Management Tools", "Virtual Tours Platforms", "Property Valuation Software", "Construction Project Management"],
+        "Food": ["Food Delivery Platforms", "Restaurant Management Systems", "Meal Kit Platforms", "Supply Chain for Food", "Inventory Management for Restaurants", "Food Tech Startups", "Online Grocery Platforms", "Nutrition Apps", "Restaurant SaaS", "Food Analytics Tools"],
+        "Energy": ["Renewable Energy Platforms", "Energy Management Systems", "Smart Grid Software", "Oil & Gas Analytics", "Utility Management Platforms", "Energy Trading Software", "Battery Management Solutions", "Solar Tech Platforms", "Wind Energy Analytics", "Energy Efficiency Tools"]
+      }
+    },
+    {
+      "strategy_type": "problem_based",
+      "description": "Search by problems companies solve",
+      "focus_pool": {
+        "Fintech": ["KYC Compliance", "AML Compliance", "Fraud Prevention", "Cross-Border Payments", "Open Banking APIs", "Expense Management", "Payment Reconciliation", "Invoice Financing", "SME Lending Solutions", "Credit Risk Analytics", "Digital Wallets", "Peer-to-Peer Payments", "Regulatory Reporting Platforms", "Payroll Solutions"],
+        "Healthcare": ["Patient Scheduling", "EHR Automation", "Teleconsultation", "Medical Billing", "Clinical Decision Support", "Patient Engagement", "Medication Adherence", "Remote Patient Monitoring", "Population Health Management", "Insurance Claims Automation", "Medical Inventory Tracking", "Healthcare Compliance Tools", "Mental Health Support Platforms"],
+        "E-commerce": ["Cart Abandonment Solutions", "Checkout Optimization", "Inventory Management", "Order Fulfillment Automation", "Customer Retention Tools", "Personalization Engines", "Pricing Optimization", "Returns Management", "Subscription Billing Platforms", "Product Recommendation Engines", "Fraud Detection for E-commerce", "E-commerce Analytics"],
+        "Education": ["Student Engagement", "Exam Management", "Remote Learning Tools", "Course Authoring Challenges", "Learning Analytics", "Skill Gap Analysis", "Content Personalization", "Collaboration Tools for Students", "Certification Management", "Tutoring Matching Platforms", "Online Assessment Automation", "Corporate Training Effectiveness"],
+        "Logistics": ["Route Optimization", "Warehouse Automation", "Supply Chain Visibility", "Fleet Tracking", "Inventory Accuracy", "Last-Mile Delivery Efficiency", "Freight Cost Optimization", "Shipment Tracking Automation", "Cold Chain Management Problems", "Transportation Scheduling", "Courier Assignment Optimization", "Logistics Compliance Tools"],
+        "Technology": ["Cloud Cost Management", "Data Privacy Compliance", "Cybersecurity Threat Detection", "DevOps Automation", "Application Monitoring", "IoT Device Management", "Collaboration Bottlenecks", "AI Model Deployment Issues", "Data Integration Problems", "Blockchain Transaction Monitoring", "Edge Computing Latency", "Software Development Lifecycle Challenges"],
+        "Manufacturing": ["Equipment Downtime Reduction", "Quality Control Automation", "Predictive Maintenance", "Inventory Shortages", "Production Planning Issues", "Supplier Coordination", "Factory Safety Monitoring", "Energy Usage Optimization", "Material Waste Reduction", "ERP Implementation Challenges", "Automation Integration Issues", "Robotics Efficiency Improvements"],
+        "Media": ["Content Distribution Challenges", "Monetization Issues", "Audience Engagement", "Social Media Analytics", "Ad Revenue Optimization", "Video Streaming Latency", "Copyright Management", "Podcast Distribution Problems", "Influencer Campaign Tracking", "Digital Asset Management", "Content Personalization Issues", "Multi-platform Publishing"],
+        "Real Estate": ["Tenant Communication", "Property Valuation Accuracy", "Lease Tracking", "Occupancy Optimization", "Maintenance Request Automation", "Commercial Lease Management", "Construction Project Delays", "Real Estate Analytics", "Listing Syndication Problems", "Rental Payment Collection", "Investment Analysis Tools", "Virtual Tours Challenges"],
+        "Food": ["Inventory Spoilage Reduction", "Delivery Time Optimization", "Restaurant Staff Scheduling", "Meal Kit Delivery Issues", "Supply Chain for Ingredients", "Order Accuracy Tracking", "Menu Optimization", "Food Quality Analytics", "Nutrition Tracking", "Restaurant Revenue Analytics", "Customer Loyalty Challenges", "Online Ordering Conversion"],
+        "Energy": ["Energy Usage Optimization", "Renewable Energy Integration", "Utility Billing Accuracy", "Demand Forecasting", "Energy Trading Risks", "Grid Stability Monitoring", "Battery Efficiency Problems", "Solar Panel Performance", "Wind Turbine Analytics", "Carbon Footprint Tracking", "Energy Compliance Reporting", "Power Outage Detection"]
+      }
+    },
+    {
+      "strategy_type": "customer_based",
+      "description": "Search by target customer segments",
+      "focus_pool": {
+        "Fintech": ["SMB Banks", "Neobanks", "Payment Gateways", "Lending Platforms", "Wealth Management Firms", "Insurance Providers", "Investment Platforms", "Digital Wallets", "SME Finance Providers", "Crowdfunding Platforms", "Payroll Solution Providers"],
+        "Healthcare": ["Clinics", "Hospitals", "Insurance Providers", "Telehealth Providers", "Pharmacies", "Laboratories", "Diagnostics Centers", "Medical Device Companies", "Mental Health Providers", "Rehabilitation Centers"],
+        "E-commerce": ["DTC Brands", "Marketplaces", "Retailers", "Subscription Services", "Online Grocery Stores", "Fashion E-commerce Platforms", "Electronics Sellers", "Consumer Goods Sellers", "Small Online Shops"],
+        "Education": ["K12 Schools", "Universities", "Tutoring Centers", "Online Course Providers", "Corporate Training Departments", "Vocational Institutes", "Language Schools", "Coding Bootcamps"],
+        "Logistics": ["E-commerce Sellers", "Freight Companies", "Warehousing Providers", "Courier Services", "Retail Distribution Centers", "Third-Party Logistics Providers", "Cold Chain Companies"],
+        "Technology": ["SMB Tech Companies", "Enterprises", "Software Development Teams", "AI/ML Startups", "IoT Solution Providers", "Cloud Service Users", "Cybersecurity Teams", "SaaS Companies"],
+        "Manufacturing": ["Factories", "Industrial Equipment Providers", "Automotive Suppliers", "Electronics Manufacturers", "Textile Manufacturers", "Food Production Plants", "Pharmaceutical Manufacturers"],
+        "Media": ["Publishing Houses", "Digital Media Companies", "Podcast Networks", "Video Streaming Platforms", "Advertising Agencies", "Influencer Platforms", "Content Creators", "Social Media Teams"],
+        "Real Estate": ["Property Management Companies", "Real Estate Developers", "Construction Firms", "Brokerage Firms", "Commercial Real Estate Investors", "Leasing Agencies", "Residential Realtors"],
+        "Food": ["Restaurants", "Food Delivery Services", "Meal Kit Providers", "Catering Services", "Grocery Chains", "Food Manufacturers", "Coffee Shops", "Bakeries"],
+        "Energy": ["Utility Companies", "Renewable Energy Firms", "Oil & Gas Companies", "Energy Traders", "Power Plant Operators", "Battery Manufacturers", "Solar & Wind Companies"]
+      }
+    }
+  ]
+}
