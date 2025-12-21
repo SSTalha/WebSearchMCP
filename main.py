@@ -131,6 +131,8 @@ def get_strategy(strategy_name: str, industry: Optional[str] = None) -> Dict[str
        
        Example: Instead of searching all "Fintech" companies, you can target those specifically serving "SMB Banks" or "Lending Platforms".
     
+    AVAILABLE Industries:
+        Fintech, Healthcare, E-commerce, Education, Logistics, Technology, Manufacturing, Media, Real Estate, Food, Energy
     Args:
         strategy_name: The type of strategy to retrieve ('sub_industry', 'problem_based', or 'customer_based')
         industry: Optional industry name to filter results (e.g., 'Fintech', 'Healthcare', 'E-commerce')
