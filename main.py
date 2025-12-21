@@ -77,7 +77,7 @@ def load_strategies():
         return []
 
 @mcp.tool()
-def get_strategy(strategy_name: str, industry: Optional[str] = None) -> Dict[str, Any]:
+def get_strategy(strategy_name: str, industry: Optional[str] = None) -> Any:
     """
     Retrieve a search strategy focus pool by strategy name and optionally filter by industry.
     
