@@ -139,7 +139,7 @@ def get_strategy(strategy_name: str, industry: Optional[str] = None) -> Any:
     
     Returns:
         - If only strategy_name provided: Returns the complete focus_pool object with all industries
-        - If both strategy_name and industry provided: Returns only the array of focus areas for that industry
+        - If both strategy_name and industry provided: Returns a dictionary containing the specific industry and its focus areas
         - On error: Returns error message with available options
     """
     
@@ -171,7 +171,7 @@ def get_strategy(strategy_name: str, industry: Optional[str] = None) -> Any:
     # If industry is specified, return only that industry's array
     if industry:
         if industry in focus_pool:
-            return focus_pool[industry]
+            return {industry: focus_pool[industry]}
         else:
             return {
                 "error": f"Industry '{industry}' not found in this strategy",
