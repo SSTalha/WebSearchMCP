@@ -23,7 +23,7 @@ SERPER_API_KEY = os.getenv("SERPER_API_KEY")
 TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
 
 # initialize server (stateless_http recommended for simple deployments)
-mcp = FastMCP("peoplemake-ai-tool", stateless_http=True)
+mcp = FastMCP("peoplemake-ai-tool")
 
 
 @mcp.tool()
@@ -182,4 +182,4 @@ def get_strategy(strategy_name: str, industry: Optional[str] = None) -> Any:
 
 if __name__ == "__main__":
     LOG.info("Starting MCP server")
-    mcp.run(transport="stdio")
+    mcp.run(transport="streamable-http")
