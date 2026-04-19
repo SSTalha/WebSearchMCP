@@ -76,6 +76,8 @@ def load_strategies():
         LOG.error(f"Failed to load strategies: {e}")
         return []
 
+
+
 @mcp.tool()
 def get_strategy(strategy_name: str, industry: Optional[str] = None) -> Any:
     """
